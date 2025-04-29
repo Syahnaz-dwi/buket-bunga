@@ -41,3 +41,7 @@ Route::get('/asset', [AssetController::class, 'index']);
 use App\Http\Controllers\ProductController;
 
 Route::get('/produk', [ProductController::class, 'index']);
+
+Route::get('/about', function () {
+    return view('pages.about');
+});
